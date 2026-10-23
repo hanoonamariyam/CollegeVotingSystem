@@ -1,0 +1,10 @@
+# Java compiled files
+*.class
+bin/
+build/
+out/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
