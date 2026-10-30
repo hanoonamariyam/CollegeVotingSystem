@@ -12,9 +12,8 @@ public class CandidateViewer {
     public static void main(String[] args) {
 
         String url = "jdbc:mysql://localhost:3306/college_voting";
-        String username = "root";
-        String password = "hanoonarootlove";
-
+        String username = System.getenv("DB_USER");
+String password = System.getenv("DB_PASSWORD");
         String query = "SELECT candidate_id, full_name, department, position "
                      + "FROM candidates";
 
